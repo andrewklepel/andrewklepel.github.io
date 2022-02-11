@@ -5,10 +5,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>What's the word?</title>
-        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-color: #111111;
+                color: #eeeeee;
+            }
+
+            a {
+                color: #aaaaaa;
+            }
+
+            h1 {
+                margin: 10px;
+            }
+            .container {
+                max-width: 1000px;
+                width: 80%;
+                margin: auto;
+                padding: 10px;
+                margin-top: 50px;
+            }
+
+            .dailyWord {
+                color: #376e35;
+                font-size: 3rem;
+            }
+        </style>
     </head>
     <body>
-        <h1>Today's word is: <span class="js-dailyWord"></span></h1>
+        <div class="container">
+            <h1>Today's word is: <span class="dailyWord js-dailyWord"></span></h1>
+            <br/>
+            <br/>
+            <br/>
+            <p>This site displays the current word of the day. To play Wordle, <a href="https://www.nytimes.com/games/wordle/index.html">visit the New York Times site.</a></p>
+            <p>WhatIsTodaysWord.com has no affiliation with the New York Times.</p>
+            <p><a href="javascript:window.location.reload(true)">Reload this page</a></p>
+        </div>
     </body>
     <script type="text/javascript">
         var wordList = [
